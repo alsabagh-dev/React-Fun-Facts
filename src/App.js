@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+
+
 function App() {
+  const reasons = [
+    'Was First Release in 2013',
+    'Was originally created by Jordan Walke',
+    'Has well over 100K stars on GitHub',
+    'Is maintained by Facebook',
+    'Powers thousands of enterprise apps, including mobile apps',
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Navbar/>
+      <Main list={reasons}/>
     </div>
   );
 }

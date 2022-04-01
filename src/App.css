@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --padding: 1.6rem 1.9rem;
+    --shadow: 3px 3px 8px #AAA492;
+    --bg-dark: #21222A;
+    --bg: #282D35;
+    --bg-light: #f7f7f7;
+    --clr-main: #61DAFB;
+    --clr-secondary: #DEEBF8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: var(--bg-light);
+    background-color: var(--bg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/*************** NavBar ***************/
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--bg-dark);
+    color: #fff;
+}
+.nav--links,
+.nav--logo {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+    }
+    .nav--links{
+        padding-top: 1rem;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.nav--logo-icon {
+    margin-right: .2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav--logo-heading {
+    font-weight: 700;
+    color: var(--clr-main);
+    font-size: 1.4rem;
+}
+
+.nav--links>li {
+    margin-right: .5rem;
+    font-weight: 600;
+    color: var(--clr-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav--links>li:last-child {
+    margin-right: 0rem;
+}
+
+/**************** Main ****************/
+
+.main {
+    position: relative;
+    padding: var(--padding);
+    color: #fff;
+    width: 100%;
+    overflow: clip;
+}
+
+.main:after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -132px;
+    display: block;
+    content: '';
+    width: 264px;
+    height: 100%;
+    background-image: url(./reactjs-icon-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+
+}
+
+.main--heading {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -.125rem;
+}
+
+.main--list {
+    margin-left: 1rem;
+}
+
+.main--list-item {
+    padding-block: .6rem;
+
+}
+
+.main--list-item::marker {
+    color: var(--clr-main);
+    font-size: 1.4rem;
 }
