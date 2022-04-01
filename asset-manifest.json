@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/alsabagh-dev/React-Fun-Facts/static/css/main.c87b6b16.css",
-    "main.js": "/alsabagh-dev/React-Fun-Facts/static/js/main.0904eb34.js",
-    "static/js/787.efd6a70f.chunk.js": "/alsabagh-dev/React-Fun-Facts/static/js/787.efd6a70f.chunk.js",
-    "static/media/reactjs-icon-bg.png": "/alsabagh-dev/React-Fun-Facts/static/media/reactjs-icon-bg.ab0e5d4cb65ea5cae84b.png",
-    "index.html": "/alsabagh-dev/React-Fun-Facts/index.html",
-    "main.c87b6b16.css.map": "/alsabagh-dev/React-Fun-Facts/static/css/main.c87b6b16.css.map",
-    "main.0904eb34.js.map": "/alsabagh-dev/React-Fun-Facts/static/js/main.0904eb34.js.map",
-    "787.efd6a70f.chunk.js.map": "/alsabagh-dev/React-Fun-Facts/static/js/787.efd6a70f.chunk.js.map"
+    "main.css": "/React-Fun-Facts/static/css/main.36bdfd57.css",
+    "main.js": "/React-Fun-Facts/static/js/main.fe0ab779.js",
+    "static/js/787.efd6a70f.chunk.js": "/React-Fun-Facts/static/js/787.efd6a70f.chunk.js",
+    "static/media/reactjs-icon-bg.png": "/React-Fun-Facts/static/media/reactjs-icon-bg.ab0e5d4cb65ea5cae84b.png",
+    "index.html": "/React-Fun-Facts/index.html",
+    "main.36bdfd57.css.map": "/React-Fun-Facts/static/css/main.36bdfd57.css.map",
+    "main.fe0ab779.js.map": "/React-Fun-Facts/static/js/main.fe0ab779.js.map",
+    "787.efd6a70f.chunk.js.map": "/React-Fun-Facts/static/js/787.efd6a70f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c87b6b16.css",
-    "static/js/main.0904eb34.js"
+    "static/css/main.36bdfd57.css",
+    "static/js/main.fe0ab779.js"
   ]
 }
